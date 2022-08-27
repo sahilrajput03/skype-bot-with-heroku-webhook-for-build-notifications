@@ -1,0 +1,146 @@
+array@arch-os using-skyp-python-library$ python3 a.py
+[SkypeContact]
+Id: 0d5d6cff-595d-49d7-9cf8-973173f5233b
+Name: Skype Translator
+Location:
+Language: None
+Avatar: https://bot-framework.azureedge.net/bot-icons-v1/translatorskype_4LzCY32ow6Ec94O3b7EmCGHriN1baBb0EO77beMb92G9AR.png
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: concierge
+Name: Skype
+Location:
+Language: None
+Avatar: https://az705183.vo.msecnd.net/dam/skype/media/concierge-assets/avatar/avatarcnsrg-144.png
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: echo123
+Name: Echo / Sound Test Service
+Location:
+Language: None
+Avatar: https://avatar.skype.com/v1/avatars/echo123/public
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: live:.cid.19bc1c14de31934
+Name: Davinder Kaur
+Location:
+Language: None
+Avatar: None
+Mood: Happy <ss type="smile">:)</ss>
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: live:.cid.8d61f6448b14e372
+Name: Sahil Rajput
+Location:
+Language: None
+Avatar: None
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: live:.cid.a0d2a22cb000856c
+Name: Shawn Abbott
+Location:
+Language: None
+Avatar: https://avatar.skype.com/v1/avatars/live:.cid.a0d2a22cb000856c?auth_key=749137276
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: live:.cid.ba8164168aa2b523
+Name: Jimmy Chae
+Location:
+Language: None
+Avatar: https://avatar.skype.com/v1/avatars/live:.cid.ba8164168aa2b523?auth_key=2130950260
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: live:.cid.d7943e95af25ac49
+Name: Murti Rajput
+Location:
+Language: None
+Avatar: None
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: live:c59935f3682c36be
+Name: shivamkrishansharma
+Location:
+Language: None
+Avatar: https://avatar.skype.com/v1/avatars/live:c59935f3682c36be?auth_key=2026027146
+Mood: None
+Phones:
+Birthday: None
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: live:slxv21
+Name: Alex Vishwa
+Location: Ghaziabad, IN
+Language: EN
+Avatar: https://avatar.skype.com/v1/avatars/live:slxv21?auth_key=1993524078
+Mood: Iam back to rule
+Phones: +911202870218
+        +917508335516
+Birthday: 1993-08-21
+Authorised: True
+Blocked: False
+Favourite: False
+
+[SkypeContact]
+Id: sahilrajput03
+Name: Sahil Rajput
+Location: Punjab, IN
+Language: EN
+Avatar: https://avatar.skype.com/v1/avatars/sahilrajput03/public
+Mood: None
+Phones:
+Birthday: 1996-11-25
+Authorised: False
+Blocked: False
+Favourite: False
+
+array@arch-os using-skyp-python-library$
