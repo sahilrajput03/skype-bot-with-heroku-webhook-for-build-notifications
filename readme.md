@@ -6,6 +6,8 @@ Using
 
 # For reference
 
+Heroku Official Guide for publishing python project (their project uses django sample application deloyment): [Click here](https://devcenter.heroku.com/articles/getting-started-with-python)
+
 - Heroku's official repo of **sample django project github repository** for heroku: [Click here](https://github.com/heroku/python-getting-started)
 
 # Insatlling new dependencies in python project and push to heroku

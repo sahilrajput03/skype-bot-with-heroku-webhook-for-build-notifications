@@ -45,8 +45,7 @@ def hello_world():
 #     dictToReturn = {'answer': 42}
 #     return jsonify(dictToReturn)
 
-# @app.route('/api/e1', methods=['POST'])
-@app.route('/api/e1', methods=['GET'])
+@app.route('/api/e1', methods=['POST'])
 def my_test_endpoint():
     print("got request /api/e1")
     input_json = request.get_json(force=True)
