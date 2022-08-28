@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, url_for, jsonify
 from utilSkpy import buildStarted, buildSuccessful, buildFailed
 
 app = Flask(__name__)
+app.run(ssl_context='adhoc')
 
 
 @app.route("/")
