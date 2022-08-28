@@ -1,5 +1,6 @@
 from markupsafe import escape
 from flask import Flask, render_template, request, url_for, jsonify
+from utilSkpy import buildStarted, buildSuccessful, buildFailed
 
 app = Flask(__name__)
 
@@ -55,11 +56,14 @@ def my_test_endpoint():
     if resource == "build":
         status = input_json['data']['status']
         if status == "pending":
-            print('STARTED..')
-        if status == "failed":
-            print('FAILED..')
+            print('BUILD STARTED..')
+            buildStarted()
         if status == "succeeded":
-            print('SUCCESSFUL..')
+            print('BUILD SUCCESSFUL..')
+            buildSuccessful()
+        if status == "failed":
+            print('BUILD FAILED..')
+            buildFailed()
 
     # Another way of accessing key's value in python: print (f"key: {key}, value: {mydictionary[key]}")
     # print(f"data from client:', {input_json['data']['status']}") # this works as well

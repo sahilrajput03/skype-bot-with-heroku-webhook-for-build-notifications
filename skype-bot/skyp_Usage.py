@@ -1,10 +1,13 @@
+import os.path
+from skpy import Skype, SkypeChats
+import random
 import os
 email = os.environ['EMAIL']
 password = os.environ['PASSWORD']
 # print(email, password) # debugging only
 
-from skpy import Skype, SkypeChats
-sk = Skype(email, password) # connect to Skype
+
+sk = Skype(email, password)  # connect to Skype
 
 # Docs: https://skpy.t.allofti.me/reference/api.html#skpy.event.SkypeEvent
 
@@ -12,7 +15,6 @@ sk = Skype(email, password) # connect to Skype
 skc = SkypeChats(sk)
 # print(skc.recent())
 
-import os.path
 
 # Docs: https://pypi.org/project/SkPy/
 
@@ -46,7 +48,6 @@ myGroup.sendMsg("Hahakaaal...")
 # with open("/home/array/Documents/profile-round.png", "rb") as f:
 with open("./images/start1.gif", "rb") as f:
 	myGroup.sendFile(f, "myFile.gif", image=True)
-
 
 
 ##### WORK MAGICALLY
