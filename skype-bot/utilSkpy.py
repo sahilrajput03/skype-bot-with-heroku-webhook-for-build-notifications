@@ -7,7 +7,13 @@ email = os.environ['EMAIL']
 password = os.environ['PASSWORD']
 # print(email, password) # debugging only
 
-sk = Skype(email, password)  # connect to Skype
+# login usigng old SOAP
+# sk = Skype(email, password)  # connect to Skype
+
+# login using new live login for compartibility with manual login flows. Source: https://github.com/Terrance/SkPy/issues/65#issuecomment-683798844
+sk = Skype()
+sk.conn.liveLogin(email, password)
+
 skc = SkypeChats(sk)
 
 # Get group: "Totel - Deployment Logs"
