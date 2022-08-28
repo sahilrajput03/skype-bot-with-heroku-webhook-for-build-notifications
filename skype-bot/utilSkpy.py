@@ -31,7 +31,7 @@ def getThought():
 	])
 
 
-COMMON_MESSAGE = "=== BUILD UPDATE ===\n"
+COMMON_MESSAGE = "=== BUILD NOTIFICATION ===\n"
 
 current_DateTime = time()
 print('\nToday is: ', ctime(current_DateTime))
