@@ -101,3 +101,7 @@ git push heroku master
 # or push from other than master branch:
 git push heroku develop:master
 ```
+
+# deployment to heroku doesn't work!!
+
+![](./deployment_to_heroku_requires_skype_login.png)
