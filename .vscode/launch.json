@@ -1,0 +1,29 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug Flask App (project local)",
+			// This is just "Python: Remote Attach" script (no modifications from myside at at all).
+			// You can run below command from external terminal and this task will attach the debugger to vscode, yo!
+			// python -m debugpy --listen 0.0.0.0:5678 -m flask --debug run --host=0.0.0.0
+			// To make code not run before attaching to the vscode debugger you can use `--wait-for-client` flag of python. YO ~Sahil
+			// python -m debugpy --wait-for-client --listen 0.0.0.0:5678 -m flask run --host=0.0.0.0
+			"type": "python",
+			"request": "attach",
+			"connect": {
+				"host": "localhost",
+				"port": 5678
+			},
+			"pathMappings": [
+				{
+					"localRoot": "${workspaceFolder}/skype-bot",
+					"remoteRoot": "."
+				}
+			],
+			"justMyCode": true
+		}
+	]
+}
