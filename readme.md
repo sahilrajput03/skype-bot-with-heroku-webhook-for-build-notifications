@@ -1,3 +1,7 @@
+# UPDATE: For making bot with microsoft bots
+
+Playlist: https://www.youtube.com/playlist?list=PLz6hh7iUxR22NewUgZjhQxYL7iL6lAmUM
+
 # skype bot builder
 
 Using
