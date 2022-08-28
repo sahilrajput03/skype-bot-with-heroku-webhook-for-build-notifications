@@ -9,9 +9,6 @@ app.run(ssl_context='adhoc')
 @app.route("/")
 def hello_world():
     print("hello")
-    print("hello")
-    print("hello")
-    print("hello")
     return "<p>Index page</p>"
 
 
