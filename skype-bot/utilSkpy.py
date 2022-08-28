@@ -14,6 +14,7 @@ skc = SkypeChats(sk)
 myGroup = skc.chat("19:43fa5ab68e7448f185e03d35c68d95cb@thread.skype")
 
 
+#
 def getThought():
 	return random.choice([
             "“The worst time is always the present.“ ~ Jean de La Fontaine",
