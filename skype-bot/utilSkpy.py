@@ -31,13 +31,15 @@ def getThought():
 	])
 
 
-COMMON_MESSAGE = "=== Totel - BUILD ==="
+# COMMON_MESSAGE = "=== Totel - BUILD ==="
 
+# def generateMessage(suffix):
+# 	return f"""{COMMON_MESSAGE}
+# {suffix}
+# """
 
 def generateMessage(suffix):
-	return f"""{COMMON_MESSAGE} 
-{suffix}
-"""
+	return suffix
 
 
 # print(generateMessage(f"""Ooops.. build failed.
