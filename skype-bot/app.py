@@ -48,10 +48,10 @@ def hello_world():
 # @app.route('/api/e1', methods=['POST'])
 @app.route('/api/e1', methods=['GET'])
 def my_test_endpoint():
+    print("got request /api/e1")
     input_json = request.get_json(force=True)
     # force=True, above, is necessary if another developer
     # forgot to set the MIME type to 'application/json'
-    print("got request /api/e1")
     resource = input_json['resource']
     if resource == "build":
         status = input_json['data']['status']

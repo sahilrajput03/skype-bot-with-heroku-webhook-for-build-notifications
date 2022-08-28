@@ -4,7 +4,13 @@ Using
 - flask backend
 - (TODO: Work more it) express backend - There is no suitable skype bot service in javascript ecosystem yet.
 
+# For reference
+
+- Heroku's official repo of **sample django project github repository** for heroku: [Click here](https://github.com/heroku/python-getting-started)
+
 # Insatlling new dependencies in python project and push to heroku
+
+#### Way 1 - [Heroku's Guide's Way](https://devcenter.heroku.com/articles/getting-started-with-python#push-local-changes)
 
 - Add dependency to `requirements.txt` file manually in the end, i.e., adding a dependency `requests` below (FILE: `requirements.txt`):
 
@@ -20,8 +26,24 @@ Using
 - Now you need to install it via: 
 
     ```bash
+    . venv/bin/activate
     pip install -r requirements.txt
     ```
+
+**You're done!**
+
+#### Way 2 - Tekena's way:
+
+- Install dependency
+    ```bash
+    . venv/bin/activate
+    pip install Flask
+    ```
+- Now overwrite complete `requirements.txt` file:
+
+```bash
+pip freeze > requirements.txt
+```
 
 **You're done!**
 
