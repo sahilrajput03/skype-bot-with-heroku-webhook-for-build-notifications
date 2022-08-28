@@ -57,8 +57,9 @@ def my_test_endpoint():
             print('BUILD STARTED..')
             buildStarted()
         if status == "succeeded":
+            commitMessage = input_json['data']['slug']['commit_description']
             print('BUILD SUCCESSFUL..')
-            buildSuccessful()
+            buildSuccessful(commitMessage)
         if status == "failed":
             print('BUILD FAILED..')
             buildFailed()

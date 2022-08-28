@@ -59,12 +59,12 @@ def buildStarted():
 	myGroup.sendMsg(generateMessage("Build started.."))
 
 
-def buildSuccessful():
+def buildSuccessful(commitMessage):
 	with open("./images/success1.gif", "rb") as f:
 		myGroup.sendFile(f, "myFile.gif", image=True)
 	myGroup.sendMsg(
             generateMessage(
-            	"Build successfully deployed @ https://totel.herokuapp.com/")
+            	commitMessage + " | Build successfully deployed @ https://totel.herokuapp.com/")
         )
 
 
