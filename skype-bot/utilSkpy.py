@@ -31,7 +31,21 @@ def getThought():
 	])
 
 
-COMMON_MESSAGE = "=== BUILD NOTIFICATION ===\n"
+COMMON_MESSAGE = "=== Totel - BUILD ==="
+
+
+def generateMessage(suffix):
+	return f"""{COMMON_MESSAGE} 
+{suffix}
+"""
+
+
+# print(generateMessage(f"""Ooops.. build failed.
+
+# {getThought()}"""))
+
+
+# print(generateMessage("Build Started.."))
 
 current_DateTime = time()
 print('\nToday is: ', ctime(current_DateTime))
@@ -40,21 +54,21 @@ print('\nToday is: ', ctime(current_DateTime))
 def buildStarted():
 	with open("./images/start1.gif", "rb") as f:
 		myGroup.sendFile(f, "myFile.gif", image=True)
-	myGroup.sendMsg(COMMON_MESSAGE)
-	myGroup.sendMsg("Build started..")
+	myGroup.sendMsg(generateMessage("Build started.."))
 
 
 def buildSuccessful():
 	with open("./images/success1.gif", "rb") as f:
 		myGroup.sendFile(f, "myFile.gif", image=True)
-	myGroup.sendMsg(COMMON_MESSAGE)
 	myGroup.sendMsg(
-            "Build SUCCESSFULLY DEPLOYED. Deployed at: https://totel.herokuapp.com/")
+            generateMessage(
+            	"Build successfully deployed @ https://totel.herokuapp.com/")
+        )
+
 
 
 def buildFailed():
 	with open("./images/failure1.gif", "rb") as f:
 		myGroup.sendFile(f, "myFile.gif", image=True)
-	myGroup.sendMsg(COMMON_MESSAGE)
-	myGroup.sendMsg("Ooops.. build failed.")
-	myGroup.sendMsg(getThought())
+		myGroup.sendMsg(generateMessage(f"""Ooops.. build failed.
+{getThought()}"""))
