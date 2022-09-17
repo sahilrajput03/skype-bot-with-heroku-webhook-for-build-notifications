@@ -17,7 +17,8 @@ sk.conn.liveLogin(email, password)
 skc = SkypeChats(sk)
 
 # Get group: "Totel - Deployment Logs"
-myGroup = skc.chat("19:43fa5ab68e7448f185e03d35c68d95cb@thread.skype")
+# myGroup = skc.chat("19:43fa5ab68e7448f185e03d35c68d95cb@thread.skype") # original group created for jimmy
+myGroup = skc.chat("19:6528c40120ad4795b34a05e540e527f7@thread.skype") # group created to use against jimmy to detect the build logs
 
 
 #
@@ -54,24 +55,24 @@ print('\nToday is: ', ctime(current_DateTime))
 
 
 def buildStarted():
-	with open("./images/start1.gif", "rb") as f:
-		myGroup.sendFile(f, "myFile.gif", image=True)
+	# with open("./images/start1.gif", "rb") as f:
+	# 	myGroup.sendFile(f, "myFile.gif", image=True)
 	myGroup.sendMsg(generateMessage("Build started.."))
 
 
 def buildSuccessful(commitMessage):
-	with open("./images/success1.gif", "rb") as f:
-		myGroup.sendFile(f, "myFile.gif", image=True)
+	# with open("./images/success1.gif", "rb") as f:
+	# 	myGroup.sendFile(f, "myFile.gif", image=True)
 	myGroup.sendMsg(
             generateMessage(
-            	f"""Build successfully deployed @ https://totel.herokuapp.com/ 
+            	f"""(static message) Build successfully deployed @ https://totel.herokuapp.com/ 
 {commitMessage}""")
         )
 
 
 
 def buildFailed():
-	with open("./images/failure1.gif", "rb") as f:
-		myGroup.sendFile(f, "myFile.gif", image=True)
+	# with open("./images/failure1.gif", "rb") as f:
+	# 	myGroup.sendFile(f, "myFile.gif", image=True)
 		myGroup.sendMsg(generateMessage(f"""Ooops.. build failed.
 {getThought()}"""))

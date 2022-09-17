@@ -3,4 +3,4 @@
 set -a
 . .env
 source venv/bin/activate
-python3 a.py
+python3 skyp_Usage.py

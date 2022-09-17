@@ -106,6 +106,8 @@ git push heroku master
 git push heroku develop:master
 ```
 
-# deployment to heroku doesn't work!!
+# deployment to heroku doesn't work
 
 ![](./deployment_to_heroku_requires_skype_login.png)
+
+SOLUTION: Simply use this on your raspi, yo!

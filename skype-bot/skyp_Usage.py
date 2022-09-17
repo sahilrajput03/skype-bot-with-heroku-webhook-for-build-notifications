@@ -11,8 +11,8 @@ sk = Skype(email, password)  # connect to Skype
 
 # Docs: https://skpy.t.allofti.me/reference/api.html#skpy.event.SkypeEvent
 
-# WORKS MAGICALLY: Prints the groups's ids as well, YO!!
 skc = SkypeChats(sk)
+# WORKS MAGICALLY: Prints the groups's ids as well, YO!! Simply uncomment below line and send a message to that group so that a send-message-event-log get printed and get the `SkpeGroupChat` id from the log.
 # print(skc.recent())
 
 
@@ -41,7 +41,8 @@ skc = SkypeChats(sk)
 
 # WORKS MAGICALLY TO SEND MESSAGES TO GROUPS
 ######## liveId of a group looks like: 19:43fa5ab68e7448f185e03d35c68d95cb@thread.skype    , TIP: Get live id by using `print(skc.recent())`
-myGroup = skc.chat("19:43fa5ab68e7448f185e03d35c68d95cb@thread.skype")
+# myGroup = skc.chat("19:43fa5ab68e7448f185e03d35c68d95cb@thread.skype") # group to help jimmy (first group)
+myGroup = skc.chat("19:6528c40120ad4795b34a05e540e527f7@thread.skype") # group to fuck jimmy
 # print(myGroup) # To debug, prints None if no group found, else prints whole lots of details about the group.
 myGroup.sendMsg("Hahakaaal...")
 # WORK MAGICALLY TO SEND IMAGES TO ANY SKYYPE GROUP
